@@ -1,7 +1,18 @@
 
-<h1>Conversor De Monedas challeng ALURA</h1>  
+# Conversor de Monedas
 
 <p>Este proyecto es una aplicación de consola en Java que permite realizar conversiones de moneda utilizando la API de ExchangeRate-API. El programa también mantiene un historial de las conversiones realizadas y ofrece un menú interactivo para seleccionar diferentes opciones de conversión. Esta aplicación es parte del Challenge 2 de la plataforma Alura.</p>
+
+## Descripción del Proyecto
+Este proyecto es una aplicación de conversión de monedas que permite a los usuarios convertir pesos colombianos (COP) a diferentes monedas extranjeras, incluyendo USD, EUR y JPY. La aplicación utiliza una API externa para obtener las tasas de cambio actuales y realiza los cálculos de conversión en tiempo real.
+
+## Características
+
+- Conversión de COP a USD
+- Conversión de COP a EUR
+- Conversión de COP a JPY
+- Historial de conversiones realizadas
+
 <h2>Funcionalidades</h2>
 <li>
   Convertir de Peso Colombiano (COP) a otras monedas: USD, EUR, y JPY.
@@ -11,6 +22,21 @@
 <h2>Requisitos</h2>
 <li>Java 11 o superio</li>
 <li>Biblioteca Gson para deserializar respuestas JSON de la API.</li>
+
+## Estructura Del proyecto
+ ```plaintext
+.
+├── models
+│   ├── DetallesMoneda.java
+│   └── Historial.java
+├── principal
+│   ├── Main.java
+│   └── Principal.java
+├── service
+│   └── ConsumoApi.java
+└── README.md
+
+```
 
 ## Instalación
 
@@ -33,43 +59,9 @@ Al ejecutar la aplicación, se mostrará un menú en la consola donde puedes sel
 ## Ejemplo de Conversión
 
 ![Ejemplo de conversión](https://github.com/geralexcas/Conversor-de-monedas-allura-challenge2/blob/master/images/ejemplo-conversion.png)
-    ### Clase `DetallesMoneda`
+ 
+<h2>Contribuciones</h2>
+<p>Las contribuciones son bienvenidas. Por favor, crea un fork del repositorio y abre un pull request con tus cambios.</p>
 
-```java
-package models;
-
-public class DetallesMoneda {
-    private String base_code;
-    private String target_code;
-    private double getConversion_rate;
-
-    public DetallesMoneda(String base_code, String target_code, double conversion_result) {
-        this.base_code = base_code;
-        this.target_code = target_code;
-        this.getConversion_rate = conversion_result;
-    }
-
-    public String getBase_code() {
-        return base_code;
-    }
-
-    public void setBase_code(String base_code) {
-        this.base_code = base_code;
-    }
-
-    public String getTarget_code() {
-        return target_code;
-    }
-
-    public void setTarget_code(String target_code) {
-        this.target_code = target_code;
-    }
-
-    public double getGetConversion_rate() {
-        return getConversion_rate;
-    }
-
-    public void setGetConversion_rate(double getConversion_rate) {
-        this.getConversion_rate = getConversion_rate;
-    }
-}
+<h2>Licencia</h2>
+<p>Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.</p>
