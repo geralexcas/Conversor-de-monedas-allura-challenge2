@@ -60,8 +60,36 @@ Al ejecutar la aplicación, se mostrará un menú en la consola donde puedes sel
 
 ![Ejemplo de conversión](https://github.com/geralexcas/Conversor-de-monedas-allura-challenge2/blob/master/images/ejemplo-conversion.png)
  
-<h2>Contribuciones</h2>
-<p>Las contribuciones son bienvenidas. Por favor, crea un fork del repositorio y abre un pull request con tus cambios.</p>
+## Tecnologías Utilizadas
+Este proyecto utiliza varias tecnologías para proporcionar una aplicación robusta y eficiente para la conversión de monedas. A continuación se describen las principales tecnologías empleadas:
+## :hammer:java
+-`Descripción:` Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos y basado en clases.
 
-<h2>Licencia</h2>
-<p>Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.</p>
+-`Uso en el Proyecto:` Java es el lenguaje principal en el que está escrita la aplicación. Se utiliza para la lógica de conversión, manejo de datos y comunicación con la API externa.
+
+## Librería Gson
+-`Descripción:` Gson es una librería de Java que permite la conversión entre objetos Java y su representación JSON.
+
+-`Uso en el Proyecto:` Se utiliza para convertir las respuestas JSON de la API de tasas de cambio en instancias de objetos Java (DetallesMoneda).
+
+## API de Tipo de Cambio
+-`Descripción:` La API de tipo de cambio (Exchange Rate API) proporciona tasas de cambio actualizadas para varias monedas.
+-`Uso en el Proyecto:` La aplicación realiza solicitudes HTTP a esta API para obtener las tasas de cambio necesarias para las conversiones de moneda.
+
+## HTTP Client
+-`Descripción:` El HttpClient es una herramienta de Java para realizar solicitudes HTTP.
+-`Uso en el Proyecto:` Se utiliza para enviar solicitudes a la API de tipo de cambio y recibir las respuestas en formato JSON.
+
+## Control de Versiones con Git y GitHub
+-`Descripción:` Git es un sistema de control de versiones distribuido, y GitHub es una plataforma basada en la web para el alojamiento de repositorios Git.
+-`Uso en el Proyecto:` Git se utiliza para el control de versiones del código fuente, y GitHub para alojar el repositorio del proyecto, permitiendo la colaboración y el seguimiento del historial de cambios.
+
+## IntelliJ IDEA
+-`Descripción:` IntelliJ IDEA es un entorno de desarrollo integrado (IDE) para el desarrollo de software.
+-`Uso en el Proyecto:` Se utiliza como IDE principal para escribir, depurar y ejecutar el código Java del proyecto.
+
+## Contribuciones
+Las contribuciones son bienvenidas. Por favor, crea un fork del repositorio y abre un pull request con tus cambios
+
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo LICENSE para más detalles
