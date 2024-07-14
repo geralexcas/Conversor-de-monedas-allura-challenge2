@@ -11,6 +11,65 @@
 <h2>Requisitos</h2>
 <li>Java 11 o superio</li>
 <li>Biblioteca Gson para deserializar respuestas JSON de la API.</li>
-<h2>Instlacion</h2>
-<p>1.Clona el repositorio en tu máquina local</p>
-![Captura desde 2024-07-12 21-40-18](https://github.com/user-attachments/assets/a33b148d-7fcd-4f46-9e44-f79f7e81ec1e)
+
+## Instalación
+
+1. Clona el repositorio:
+    ```sh
+    git clone https://github.com/geralexcas/Conversor-de-monedas-allura-challenge2.git
+    ```
+2. Navega al directorio del proyecto:
+    ```sh
+    cd Conversor-de-monedas-allura-challenge2
+    ```
+3. Ejecuta la aplicación:
+    ```sh
+    java -jar conversor-de-monedas.jar
+    ```
+    ## Uso
+
+Al ejecutar la aplicación, se mostrará un menú en la consola donde puedes seleccionar la conversión deseada y la cantidad a convertir. La aplicación mostrará el resultado de la conversión y guardará la consulta en un historial.
+
+## Ejemplo de Conversión
+
+![Ejemplo de conversión](https://github.com/geralexcas/Conversor-de-monedas-allura-challenge2/blob/master/images/ejemplo-conversion.png)
+    ### Clase `DetallesMoneda`
+
+```java
+package models;
+
+public class DetallesMoneda {
+    private String base_code;
+    private String target_code;
+    private double getConversion_rate;
+
+    public DetallesMoneda(String base_code, String target_code, double conversion_result) {
+        this.base_code = base_code;
+        this.target_code = target_code;
+        this.getConversion_rate = conversion_result;
+    }
+
+    public String getBase_code() {
+        return base_code;
+    }
+
+    public void setBase_code(String base_code) {
+        this.base_code = base_code;
+    }
+
+    public String getTarget_code() {
+        return target_code;
+    }
+
+    public void setTarget_code(String target_code) {
+        this.target_code = target_code;
+    }
+
+    public double getGetConversion_rate() {
+        return getConversion_rate;
+    }
+
+    public void setGetConversion_rate(double getConversion_rate) {
+        this.getConversion_rate = getConversion_rate;
+    }
+}
